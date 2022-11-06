@@ -27,13 +27,15 @@ Output:
 ```
 
 ### nationality
+```
+nationality : Default equals to "random" but you can put national code like "TR", "IN". Codes = "AU":"Australia", "BR":"Brazil", "CA":"Canada", "CH":"Switzerland", "DE":"Germany", "DK":"Denmark", "ES":"Spain", "FI":"Finland", "FR":"France", "GB":"United Kingdom", "IE":"Ireland", "IN":"India", "IR":"Iran", "MX":"Mexico", "NL":"Netherlands", "NO":"Norway", "NZ":"New Zealand", "RS":"Serbia", "TR":"Turkey", "UA":"Ukraine", "US":"United States"
+```
 ```python
-# nationality : Default equals to "random" but you can put national code like "TR", "IN".
 print(randomUser.create_person(nationality="US"))
 ```
 Output:
 ```
-{"results":[{"gender":"male","name":{"title":"Mr","first":"Ruben","last":"Ross"},"location":{"street":{"number":9716,"name":"Lakeshore Rd"},"city":"Ontario","state":"Arizona","country":"**United States**","postcode":25027,"coordinates":{"latitude":"86.7816","longitude":"-45.2377"},"timezone":{"offset":"+9:30","description":"Adelaide, Darwin"}},"email":"ruben.ross@example.com","login":{"uuid":"dcef6a02-42cc-4750-8ef0-8027177204d7","username":"yellowbird597","password":"taco","salt":"qhXXEwbH","md5":"a2e9e36d984c50cfab60cb50a4fe15f6","sha1":"6ace2c3b8f298259daec0b51cc5864c4137514a8","sha256":"3656dab83c2ccd94eb90714a49599994ef01357ca26435ce7dd8fc94e65ca0f8"},"dob":{"date":"1947-07-25T04:40:24.471Z","age":75},"registered":{"date":"2005-09-01T06:47:33.146Z","age":17},"phone":"(244) 302-8446","cell":"(385) 539-7299","id":{"name":"SSN","value":"721-43-0518"},"picture":{"large":"https://randomuser.me/api/portraits/men/45.jpg","medium":"https://randomuser.me/api/portraits/med/men/45.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/45.jpg"},"nat":"**US**"}],"info":{"seed":"3e3e2342ec6d62d6","results":1,"page":1,"version":"1.4"}}
+{"results":[{"gender":"male","name":{"title":"Mr","first":"Ruben","last":"Ross"},"location":{"street":{"number":9716,"name":"Lakeshore Rd"},"city":"Ontario","state":"Arizona","country":"United States","postcode":25027,"coordinates":{"latitude":"86.7816","longitude":"-45.2377"},"timezone":{"offset":"+9:30","description":"Adelaide, Darwin"}},"email":"ruben.ross@example.com","login":{"uuid":"dcef6a02-42cc-4750-8ef0-8027177204d7","username":"yellowbird597","password":"taco","salt":"qhXXEwbH","md5":"a2e9e36d984c50cfab60cb50a4fe15f6","sha1":"6ace2c3b8f298259daec0b51cc5864c4137514a8","sha256":"3656dab83c2ccd94eb90714a49599994ef01357ca26435ce7dd8fc94e65ca0f8"},"dob":{"date":"1947-07-25T04:40:24.471Z","age":75},"registered":{"date":"2005-09-01T06:47:33.146Z","age":17},"phone":"(244) 302-8446","cell":"(385) 539-7299","id":{"name":"SSN","value":"721-43-0518"},"picture":{"large":"https://randomuser.me/api/portraits/men/45.jpg","medium":"https://randomuser.me/api/portraits/med/men/45.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/45.jpg"},"nat":"US"}],"info":{"seed":"3e3e2342ec6d62d6","results":1,"page":1,"version":"1.4"}}
 ```
 
 ### noinfo 
@@ -58,7 +60,8 @@ gender,name.title,name.first,name.last,location.street.number,location.street.na
 female,Ms,Shubha,Nagane,2500,College St,Jalgaon,Uttar Pradesh,India,52075,11.0960,60.6897,+6:00,"Almaty, Dhaka, Colombo",shubha.nagane@example.com,c8ec336f-7e89-49c7-abec-08dcc76198b1,smallbird605,testerer,4HLJXBAQ,cf03b7ad8c04543966c14a4912c3f18f,a6cb6f52cc39c754b0bbeb2259b34e89924cf2fb,f56eb303cf4484e6e1c82f4f39ba037dce4ce2f8105d1f3d086ce04ba9662a8a,1990-10-11T10:05:53.148Z,32,2017-06-10T14:19:41.066Z,5,8305570316,9368258681,UIDAI,435592458886,https://randomuser.me/api/portraits/women/74.jpg,https://randomuser.me/api/portraits/med/women/74.jpg,https://randomuser.me/api/portraits/thumb/women/74.jpg,IN
 ```
 
-And if you want to download,
+And if you want to see, [csv_file]()
+
 ```python
 # download : Default equals to 'False', just make 'True' for downloading the fake person's data. (The file's name will be 'person.(format)','person.json') and generally using with format() parameter.
 print(randomUser.create_person(format="csv", download=True))
