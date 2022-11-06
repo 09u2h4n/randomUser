@@ -11,8 +11,8 @@ print(randomUser.create_person())
 1) [gender_code](#gender_code)
 2) [nationality](#nationality)
 3) [noinfo](#noinfo)
-4) [format](#format)
-5) [download](#download)
+4) [format](#format-and-download)
+5) [download](**download**)
 6) [printing_encode](#printing_encode)
 
 # Usage with parameters
@@ -60,7 +60,7 @@ gender,name.title,name.first,name.last,location.street.number,location.street.na
 female,Ms,Shubha,Nagane,2500,College St,Jalgaon,Uttar Pradesh,India,52075,11.0960,60.6897,+6:00,"Almaty, Dhaka, Colombo",shubha.nagane@example.com,c8ec336f-7e89-49c7-abec-08dcc76198b1,smallbird605,testerer,4HLJXBAQ,cf03b7ad8c04543966c14a4912c3f18f,a6cb6f52cc39c754b0bbeb2259b34e89924cf2fb,f56eb303cf4484e6e1c82f4f39ba037dce4ce2f8105d1f3d086ce04ba9662a8a,1990-10-11T10:05:53.148Z,32,2017-06-10T14:19:41.066Z,5,8305570316,9368258681,UIDAI,435592458886,https://randomuser.me/api/portraits/women/74.jpg,https://randomuser.me/api/portraits/med/women/74.jpg,https://randomuser.me/api/portraits/thumb/women/74.jpg,IN
 ```
 
-And if you want to see, [csv_file]()
+And if you want to download use **"download"** parameter.
 
 ```python
 # download : Default equals to 'False', just make 'True' for downloading the fake person's data. (The file's name will be 'person.(format)','person.json') and generally using with format() parameter.
@@ -71,7 +71,7 @@ Output:
 Trying to download..
 Downloaded..
 ```
-Downloaded file 
+Downloaded file [csv_file]()
 
 ### printing_encode 
 ```python
