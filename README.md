@@ -8,7 +8,7 @@ randomUser.create_person()
 ```
 
 # Parameters
-1) [gender_code](gender_code)
+1) [gender_code](#gender_code)
 2) [nationality]
 3) [noinfo]
 4) [format]
